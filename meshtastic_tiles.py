@@ -344,7 +344,13 @@ def get_region_bounds(region):
             'south': 54.4,   # Aleutian Islands
             'east': -129.9,  # Canadian border
             'west': -172.4   # Aleutian Islands
-        }
+        },
+        'florida': {
+            'north': 31.44,  # Alabama
+            'south': 24.1,   # Gulf of Mexico
+            'east': -79.11,  # Alantic Ocean
+            'west': -88.38,  # Gulf of Mexico
+        },
     }
     return regions.get(region.lower())
 
@@ -354,7 +360,7 @@ def main():
     # Method selection (mutually exclusive)
     method_group = parser.add_mutually_exclusive_group(required=True)
     method_group.add_argument('--region', type=str, 
-                        choices=['north_america', 'usa', 'canada', 'mexico', 'california', 'texas', 'alaska'],
+                        choices=['north_america', 'usa', 'canada', 'mexico', 'california', 'texas', 'alaska', 'florida'],
                         help='Predefined region')
     method_group.add_argument('--city', type=str, help='City name (e.g., "San Francisco" or "Portland, Oregon")')
     method_group.add_argument('--cities', type=str, help='Multiple cities separated by semicolons (e.g., "San Francisco; Oakland; San Jose")')
