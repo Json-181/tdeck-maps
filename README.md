@@ -136,6 +136,12 @@ python meshtastic_tiles.py --city "Denver" --source terrain
 
 # Cycling-focused
 python meshtastic_tiles.py --city "Denver" --source cycle
+
+# Google Earth Hybrid
+python meshtastic_tiles.py --city "Denver" --source Google_Terrain_Hybrid
+
+# CartoDb Dark Matter
+python meshtastic_tiles.py --city "Denver" --source CartoDb_Dark_Matter
 ```
 
 ## 🔍 Zoom Levels Guide
