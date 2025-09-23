@@ -145,7 +145,9 @@ class MeshtasticTileGenerator:
             "osm": f"https://tile.openstreetmap.org/{zoom}/{x}/{y}.png",
             "satellite": f"https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{zoom}/{y}/{x}",
             "terrain": f"https://tile.opentopomap.org/{zoom}/{x}/{y}.png",
-            "cycle": f"https://tile.thunderforest.com/cycle/{zoom}/{x}/{y}.png"
+            "cycle": f"https://tile.thunderforest.com/cycle/{zoom}/{x}/{y}.png",
+            "Google_Satellite_Hybrid": f"https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}",
+            "CartoDb Dark Matter": f"http://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"
         }
         return sources.get(source, sources["osm"])
     
