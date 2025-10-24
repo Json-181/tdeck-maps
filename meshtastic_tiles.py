@@ -348,10 +348,22 @@ def get_region_bounds(region):
             'west': -172.4   # Aleutian Islands
         },
         'florida': {
-            'north': 31.44,  # Alabama
-            'south': 24.1,   # Gulf of Mexico
+            'north': 31.44,  # Alabama/Georgia
+            'south': 24.1,   # Strait of Florida
             'east': -79.11,  # Alantic Ocean
             'west': -88.38,  # Gulf of Mexico
+        },
+        'georgia': {
+            'north': 35.2,   # Tennesse/North Carolina
+            'south': 30.36,  # Florida
+            'east': -80.75,  # Alantic Ocean
+            'west': -85.79,  # Alabama
+        },
+        'deep_southeast_usa': {
+            'north': 35.2,   # Washington to Saint Louisiana
+            'south': 30.36,  # Strait of Florida
+            'east': -80.75,  # Alantic Ocean
+            'west': -85.79,  # Mississippi
         },
     }
     return regions.get(region.lower())

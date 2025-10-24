@@ -110,7 +110,7 @@ python meshtastic_tiles.py --region usa --min-zoom 4 --max-zoom 8
 python meshtastic_tiles.py --region north_america --min-zoom 4 --max-zoom 8
 ```
 
-**Available regions:** `north_america`, `usa`, `canada`, `mexico`, `california`, `texas`, `alaska`, `florida`
+**Available regions:** `north_america`, `usa`, `canada`, `mexico`, `california`, `texas`, `alaska`, `florida`, `georgia`, `deep_southeast_usa`
 
 ### Method 4: Custom Coordinates
 
