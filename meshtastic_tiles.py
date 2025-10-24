@@ -147,7 +147,8 @@ class MeshtasticTileGenerator:
             "terrain": f"https://tile.opentopomap.org/{zoom}/{x}/{y}.png",
             "cycle": f"https://tile.thunderforest.com/cycle/{zoom}/{x}/{y}.png",
             "Google_Sat_Hybrid": f"https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={zoom}",
-            "CartoDb_Dark_Matter": f"http://basemaps.cartocdn.com/dark_all/{zoom}/{x}/{y}.png"
+            "CartoDb_Dark_Matter": f"http://basemaps.cartocdn.com/dark_all/{zoom}/{x}/{y}.png",
+            #"custom_tile_server": f __fill in custom url path here__/{zoom}/{x}/{y}.png"       #This path will require a custom tile server, preferably a local server.
         }
         return sources.get(source, sources["osm"])
     

@@ -142,6 +142,9 @@ python meshtastic_tiles.py --city "Denver" --source Google_Terrain_Hybrid
 
 # CartoDb Dark Matter
 python meshtastic_tiles.py --city "Denver" --source CartoDb_Dark_Matter
+
+# Custom Title Server (Point to a custom URL in script)
+python meshtastic_tiles.py --city "Denver" --source custom_tile_server
 ```
 
 ## 🔍 Zoom Levels Guide
